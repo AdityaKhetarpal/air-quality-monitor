@@ -1,0 +1,13 @@
+# Generated data & logs — reproducible from code, shouldn't be versioned
+data/*.csv
+logs/*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+.vscode/
+.DS_Store
