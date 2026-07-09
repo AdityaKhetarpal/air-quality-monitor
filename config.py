@@ -5,6 +5,9 @@ import pathlib
 BASE_DIR = pathlib.Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 LOGS_DIR = BASE_DIR / "logs"
+DIRTY_READINGS_CSV = DATA_DIR / "readings-dirty.csv" #path to messy file
+CLEAN_READINGS_CSV = DATA_DIR / "readings_dirty_cleaned.csv" #path to cleaned version of data
+RANDOM_SEED = 42
 
 LIVE_READINGS_CSV = DATA_DIR / "readings_live.csv"
 
