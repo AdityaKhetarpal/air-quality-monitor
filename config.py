@@ -7,6 +7,7 @@ DATA_DIR = BASE_DIR / "data"
 LOGS_DIR = BASE_DIR / "logs"
 DIRTY_READINGS_CSV = DATA_DIR / "readings-dirty.csv" #path to messy file
 CLEAN_READINGS_CSV = DATA_DIR / "readings_dirty_cleaned.csv" #path to cleaned version of data
+DB_PATH = DATA_DIR / "readings.db"
 RANDOM_SEED = 42
 
 LIVE_READINGS_CSV = DATA_DIR / "readings_live.csv"
