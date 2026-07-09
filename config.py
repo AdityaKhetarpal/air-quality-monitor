@@ -28,3 +28,5 @@ max_retries = 3
 #risk threshold number
 
 breach = 15.0
+
+PM_25_OUTLIER_THRESHOLD = 500.0
