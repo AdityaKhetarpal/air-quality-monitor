@@ -9,6 +9,7 @@ DIRTY_READINGS_CSV = DATA_DIR / "readings_dirty.csv"       # path to messy file
 CLEAN_READINGS_CSV = DATA_DIR / "readings_dirty_cleaned.csv"  # path to cleaned version of data
 LIVE_READINGS_CSV = DATA_DIR / "readings_live.csv"
 DB_PATH = DATA_DIR / "readings.db"
+POWERBI_DIR = DATA_DIR / "powerbi"
 
 RANDOM_SEED = 42
 

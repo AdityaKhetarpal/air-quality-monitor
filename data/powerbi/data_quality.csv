@@ -1,0 +1,11 @@
+city,source,total_readings,missing_count,pct_missing,outlier_count,pct_outlier
+Bengaluru,dirty,3,1,33.3,1,33.3
+Bengaluru,live,1,0,0.0,0,0.0
+Chennai,dirty,11,3,27.3,0,0.0
+Chennai,live,1,0,0.0,0,0.0
+Delhi,dirty,14,3,21.4,1,7.1
+Delhi,live,1,0,0.0,0,0.0
+Kolkata,dirty,5,0,0.0,0,0.0
+Kolkata,live,1,0,0.0,0,0.0
+Mumbai,dirty,7,1,14.3,0,0.0
+Mumbai,live,1,0,0.0,0,0.0
