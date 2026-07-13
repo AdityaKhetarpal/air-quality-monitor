@@ -30,3 +30,12 @@ FROM readings
 WHERE is_missing = 0 AND is_outlier = 0
 GROUP BY city
 ORDER BY avg_pm2_5 DESC;
+
+-- Query 4: Data quality report — % missing and % outlier, by city and source
+
+SELECT city, source, COUNT(*) as total_readings, SUM(is_missing) as missing_count,ROUND(100.0 * SUM(is_missing) / COUNT(*), 1) AS pct_missing,
+    SUM(is_outlier) AS outlier_count,
+    ROUND(100.0 * SUM(is_outlier) / COUNT(*), 1) AS pct_outlier
+FROM readings
+GROUP BY city, source
+ORDER BY city, source;

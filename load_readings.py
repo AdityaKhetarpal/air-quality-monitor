@@ -11,7 +11,7 @@ def prepare_live_data() -> pd.DataFrame:
     df.loc[df["pm2_5"] < 0, "pm2_5"] = None
 
     df["is_missing"] = df["pm2_5"].isna().astype(int)
-    df["is_outlier"] = (df["pm2_5"] > config.PM_25_OUTLIER_THRESHOLD).astype(int)
+    df["is_outlier"] = (df["pm2_5"] > config.PM25_OUTLIER_THRESHOLD).astype(int)
     df["source"] = "live"
     df["source_reading_id"] = range(1, len(df) + 1)
 
