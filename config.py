@@ -31,3 +31,4 @@ max_retries = 3
 breach = 15.0
 
 PM_25_OUTLIER_THRESHOLD = 500.0
+REFERENCE_DATE = "2026-07-08"
