@@ -20,3 +20,13 @@ WHERE is_missing = 0
   AND is_outlier = 0
 GROUP BY city
 HAVING avg_this_week > avg_last_week;
+
+-- Query 3: City ranking by average PM2.5 (worst to best)
+
+SELECT city, ROUND(AVG(pm2_5), 1) AS avg_pm2_5,
+    RANK() OVER(ORDER BY AVG(pm2_5) DESC) AS rank_byavg,
+    DENSE_RANK() OVER (ORDER BY AVG(pm2_5) DESC) AS denserank_byavg
+FROM readings
+WHERE is_missing = 0 AND is_outlier = 0
+GROUP BY city
+ORDER BY avg_pm2_5 DESC;
