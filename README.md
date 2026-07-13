@@ -2,6 +2,10 @@
 
 A production-style data pipeline that pulls live PM2.5 air-quality readings for five Indian cities, validates and models them in SQL, and monitors for WHO guideline breaches in real time.
 
+## Dashboard
+
+![Air Quality Dashboard](docs/dashboard_screenshot.png)
+
 ## What this project does
 
 - Pulls live PM2.5 readings from a public air-quality API (Open-Meteo), with retry logic and graceful handling of partial failures (fail-soft: one city failing doesn't block the others).
